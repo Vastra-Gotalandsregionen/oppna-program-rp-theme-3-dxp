@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.0.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_7_0_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>7.0.0+</version>
+	</compatibility>
+	<!--<theme id="rp-bootstrap-theme" name="rp-bootstrap-theme">
+		<template-extension>ftl</template-extension>
+		<portlet-decorator id="barebone" name="Barebone">
+			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="borderless" name="Borderless">
+			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="decorate" name="Decorate">
+			<default-portlet-decorator>true</default-portlet-decorator>
+			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
+		</portlet-decorator>
+	</theme>-->
+	<theme id="rp-bootstrap-theme" name="RP Bootstrap Theme">
+
+		<template-extension>ftl</template-extension>
+
+		<settings>
+			<setting key="global-info-header" value="" configurable="true" type="text" />
+			<setting key="portlet-setup-show-borders-default" value="true" configurable="true" type="checkbox" />
+			<setting key="use-rp-nav-portlet" value="true" configurable="true" type="checkbox" />
+			<setting key="show-breadcrumbs" value="true" configurable="true" type="checkbox" />
+			<setting key="show-notifications-bar" value="true" configurable="true" type="checkbox" />
+			<setting key="show-my-sites" value="false" configurable="true" type="checkbox" />
+			<setting key="show-signin-link" value="true" configurable="true" type="checkbox" />
+			<setting key="show-tyck-till" value="true" configurable="true" type="checkbox" />
+			<setting key="show-top-navigation-wrap" value="true" configurable="true" type="checkbox" />
+			<setting key="show-quick-navigation" value="true" configurable="true" type="checkbox" />
+			<setting key="additional-logo-class" value="rp" configurable="true" type="select" options="rp,vgr-portal,blandbarhet,wwwprv,vega,ifeed,tage" />
+			<setting key="enable-piwik" value="false" configurable="true" type="checkbox" />
+			<setting key="piwik-site-id" value="" configurable="true" type="text" />
+		</settings>
+
+	</theme>
+</look-and-feel>

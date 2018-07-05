@@ -1,0 +1,18 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+@import url(custom_common.css);
+@import url(custom_base.css);
+@import url(custom_navigation.css);
+@import url(custom_modules.css);
+@import url(custom_liferay_components.css);
+@import url(custom_liferay_portlets.css);
+@import url(custom_portlet.css);
+@import url(custom_articles.css);
+@import url(custom_sandbox.css);
+@import url(custom_layout.css);
+@import url(custom_responsive.css);
