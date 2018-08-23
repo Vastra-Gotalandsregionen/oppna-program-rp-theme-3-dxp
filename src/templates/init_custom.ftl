@@ -1,6 +1,6 @@
 <#------ Taglibs ----------------------------------------------------------------------------------------------------------------->
-<#assign liferay_ui=PortalJspTagLibs["/WEB-INF/tld/liferay-ui.tld"]>
-<#assign aui=PortalJspTagLibs["/WEB-INF/tld/liferay-aui.tld"]>
+<#assign liferay_ui=PortalJspTagLibs["/META-INF/liferay-ui.tld"]>
+<#assign aui=PortalJspTagLibs["/META-INF/liferay-aui.tld"]>
 
 <#------ Theme CSS class ----------------------------------------------------------------------------------------------------------------->
 <#assign css_class = css_class + " dockbar-split" >
@@ -46,12 +46,10 @@
 	<#assign show_quick_navigation = false />
 </#if>
 
-<#-- Show Sign In Link -->
-<#assign show_sign_in_link = false />
-
-<#if !is_signed_in && theme_display.getThemeSetting("show-signin-link") == "true">
-	<#assign show_sign_in_link = true />
-</#if>
+<#assign
+sign_out_text = languageUtil.get(locale, "sign-out")
+sign_out_url = htmlUtil.escape(theme_display.getURLSignOut())
+/>
 
 <#-- Show Tyck till -->
 <#assign show_tyck_till = false >
@@ -73,9 +71,9 @@
 
 <#assign piwik_tracking_portlet_id = "piwiktracking_WAR_piwiktrackingportlet" />
 
-<#------ Dockbar ----------------------------------------------------------------------------------------------------------------->
-
-<#assign showDockbar = permissionChecker.isOmniadmin() || permissionChecker.isCompanyAdmin(company_id) || permissionChecker.isCommunityAdmin(group_id) || permissionChecker.isCommunityOwner(group_id) />
+<#------ Admin controls -------------------------------------------------->
+<#assign custom_show_admin_controls = sessionClicks.get(request, "custom_admin_controls", "custom-admin-controls-closed") />
+<#assign css_class = css_class + " " + custom_show_admin_controls />
 
 
 <#------ Phrases ----------------------------------------------------------------------------------------------------------------->
@@ -185,6 +183,7 @@
 
 		${freeMarkerPortletPreferences.setValue("portletSetupShowBorders","false")}
 
-		${theme.runtime(portlet_id, "", freeMarkerPortletPreferences)}
+		<@liferay_portlet["runtime"] portletName="${portlet_id}" />
+		<#--<@liferay_portlet["runtime"] portletName="${portlet_id}" defaultPreferences="${freeMarkerPortletPreferences}" />-->
 		${freeMarkerPortletPreferences.reset()}
 </#macro>

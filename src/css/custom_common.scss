@@ -1,10 +1,10 @@
-@import "aui/alloy-font-awesome/scss/mixins-alloy";
-@import "aui/alloy-font-awesome/scss/variables";
+@import "aui/lexicon/fonts/alloy-font-awesome/scss/mixins-alloy";
+@import "aui/lexicon/fonts/alloy-font-awesome/scss/variables";
 @import "compass";
-@import "compass/css3/user-interface";
+//@import "compass/css3/user-interface";
 @import "mixins";
+@import "bourbon";
 
-.aui {
 	body {
 		color: #555;
 		font-weight: 200;
@@ -606,7 +606,6 @@
 		}
 
 		.toggler-content-expanded {
-			border: 1px solid $borderColor;
 
 			.accordion-inner {
 				border-width: 0;
@@ -646,7 +645,7 @@
 		background-color: #FFF;
 	}
 
-	&.ie {
+	.ie {
 		.dockbar, #navigation {
 			.navbar-inner {
 				filter: none;
@@ -654,7 +653,7 @@
 		}
 	}
 
-	&.ie6, &.ie7 {
+	.ie6, .ie7 {
 		.accordion-group .accordion-heading {
 			background: none no-repeat 0 50%;
 
@@ -887,7 +886,7 @@
 	body.yui3-skin-sam .yui3-widget-mask {
 		@include opacity(0.8);
 	}
-}
+
 
 #content > .alert-info {
 	display: none;

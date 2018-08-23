@@ -23,7 +23,7 @@
 				<li class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" $nav_item_attr_selected role="presentation">
 
 					<a aria-labelledby="layout_${nav_item.getLayoutId()}" href="${nav_item.getURL()}" ${nav_item_attr_has_popup} ${nav_item.getTarget()} role="menuitem">
-						<span>${nav_item.icon()} ${nav_item.getName()}</span>
+						<span>${nav_item.getName()}</span>
 					</a>
 
 					<#if nav_item.hasChildren()>

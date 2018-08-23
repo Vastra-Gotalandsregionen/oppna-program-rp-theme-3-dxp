@@ -1,14 +1,14 @@
-@import "aui/alloy-font-awesome/scss/mixins-alloy";
-@import "aui/alloy-font-awesome/scss/variables";
-@import "compass";
-@import "compass/css3/user-interface";
+@import "aui/lexicon/fonts/alloy-font-awesome/scss/mixins-alloy";
+@import "aui/lexicon/fonts/alloy-font-awesome/scss/variables";
+//@import "compass";
+//@import "compass/css3/user-interface";
 @import "mixins";
+@import "bourbon";
 
 html {
     height: 100%;
 }
 
-.aui {
 
   /*------- html and body -------*/
 
@@ -62,7 +62,6 @@ html {
   #heading {
     margin: 0;
     padding: 15px 0;
-    padding-top: 0;
   }
 
   .site-title {
@@ -310,13 +309,17 @@ html {
     text-decoration: underline;
   }
 
-    .dockbar a,
-    .dockbar a:visited,
-    .nav-pills a,
-    .nav-pills a:visited
-    {
-        text-decoration: none;
-    }
+  .dockbar a,
+  .dockbar a:visited,
+  .nav-pills a,
+  .nav-pills a:visited
+  {
+      text-decoration: none;
+  }
+
+  a.btn {
+    text-decoration: none;
+  }
 
   a:hover {
     color: #2f72a9;
@@ -429,4 +432,4 @@ html {
     border: 0;
   }
 
-}
+

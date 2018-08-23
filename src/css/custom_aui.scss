@@ -1,0 +1,48 @@
+.row {
+  margin-left: inherit;
+  margin-right: inherit;
+}
+
+.portlet-column-first {
+  padding-left: 0;
+}
+
+.portlet-column-last {
+  padding-right: 0;
+}
+
+.portlet-column-only {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  //position: absolute;
+  margin-left: 0;
+  //margin-top: 4px \9;
+}
+
+.autofit-row {
+  display: flex;
+}
+
+.autofit-col-expand {
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    .portlet:hover > .portlet-content-editable, .portlet.focus > .portlet-content-editable {
+      border-color: transparent;
+      //border-top-left-radius: 0;
+      //border-top-right-radius: 0;
+    }
+  }
+}
+
+html .portlet .portlet-topper {
+  border: 1px solid #e7e7e7;
+}

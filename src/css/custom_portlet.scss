@@ -1,8 +1,9 @@
-@import "aui/alloy-font-awesome/scss/mixins-alloy";
-@import "aui/alloy-font-awesome/scss/variables";
+@import "aui/lexicon/fonts/alloy-font-awesome/scss/mixins-alloy";
+@import "aui/lexicon/fonts/alloy-font-awesome/scss/variables";
 @import "compass";
-@import "compass/css3/user-interface";
+//@import "compass/css3/user-interface";
 @import "mixins";
+@import "bourbon";
 
 // Creating a triangle
 // --------
@@ -53,7 +54,6 @@
 }
 
 
-.aui {
 	/*----------------------------------------------------------------------
 	=Custom Portlets
 	----------------------------------------------------------------------*/
@@ -2654,14 +2654,6 @@ text-decoration: none;
 
   }
 
-     
-     
-}
-
-
-
-
-
 
 /* iFeed */
 
@@ -2670,3 +2662,34 @@ text-decoration: none;
     height: 1%
 }
 
+.portlet-barebone {
+
+    .portlet-topper,
+    .portlet-content {
+        border: none;
+    }
+
+    .portlet-title-text {
+        display: none;
+    }
+
+}
+
+.custom-admin-controls-open {
+    .portlet > .portlet-topper {
+        z-index: 999;
+    }
+}
+
+
+
+.portlet-journal-content {
+    .portlet-content {
+        //padding: 0;
+
+        .portlet-body {
+            //padding: 0;
+        }
+
+    }
+}

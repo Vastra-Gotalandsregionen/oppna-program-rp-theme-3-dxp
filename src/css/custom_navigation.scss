@@ -1,10 +1,10 @@
-@import "aui/alloy-font-awesome/scss/mixins-alloy";
-@import "aui/alloy-font-awesome/scss/variables";
+@import "aui/lexicon/fonts/alloy-font-awesome/scss/mixins-alloy";
+@import "aui/lexicon/fonts/alloy-font-awesome/scss/variables";
 @import "compass";
-@import "compass/css3/user-interface";
+//@import "compass/css3/user-interface";
 @import "mixins";
+@import "bourbon";
 
-.aui {
 
     /*------- Dockbar -------*/
 
@@ -159,7 +159,7 @@
 
   .top-nav-list li > span {
     display: block;
-    margin: 5px 0 0 0;
+    //margin: 5px 0 0 0;
     color: #777;
   }
 
@@ -184,7 +184,7 @@
   }
 
   #navigation {
-    margin: 0 0 5px 0;
+    margin: 0 0 32px 0;
   }
 
   #navigation > ul {
@@ -595,4 +595,4 @@
         padding-left: 20px;
     }
 
-}
+

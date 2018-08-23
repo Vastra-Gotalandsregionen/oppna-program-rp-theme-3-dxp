@@ -22,6 +22,17 @@
 
 		<template-extension>ftl</template-extension>
 
+		<portlet-decorator id="barebone" name="Barebone">
+			<default-portlet-decorator>true</default-portlet-decorator>
+			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="borderless" name="Borderless">
+			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="decorate" name="Decorate">
+			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
+		</portlet-decorator>
+
 		<settings>
 			<setting key="global-info-header" value="" configurable="true" type="text" />
 			<setting key="portlet-setup-show-borders-default" value="true" configurable="true" type="checkbox" />

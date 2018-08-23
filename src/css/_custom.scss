@@ -5,14 +5,24 @@
 
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 
-@import url(custom_common.css);
-@import url(custom_base.css);
-@import url(custom_navigation.css);
-@import url(custom_modules.css);
-@import url(custom_liferay_components.css);
-@import url(custom_liferay_portlets.css);
-@import url(custom_portlet.css);
-@import url(custom_articles.css);
-@import url(custom_sandbox.css);
-@import url(custom_layout.css);
-@import url(custom_responsive.css);
+@import 'custom_aui.scss';
+@import 'custom_common.scss';
+@import 'custom_base.scss';
+@import 'custom_navigation.scss';
+@import 'custom_modules.scss';
+@import 'custom_liferay_components.scss';
+@import 'custom_liferay_portlets.scss';
+@import 'custom_portlet.scss';
+@import 'custom_articles.scss';
+@import 'custom_sandbox.scss';
+@import 'custom_layout.scss';
+@import 'custom_responsive.scss';
+
+@import 'partials/atoms/button';
+@import 'partials/atoms/label';
+@import 'partials/atoms/select';
+@import 'partials/atoms/wrapper';
+@import 'partials/molecules/admin-toggle';
+@import 'partials/molecules/control-menu';
+@import 'partials/molecules/portlet_decorator';
+@import 'partials/molecules/topper';

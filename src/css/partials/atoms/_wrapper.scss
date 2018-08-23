@@ -1,0 +1,12 @@
+#wrapper {
+  min-height: 100%;
+  //margin: 0;
+  padding: 0 1em 90px 1em;
+  position: relative;
+}
+
+.has-control-menu.custom-admin-controls-closed {
+  #wrapper {
+    margin-top: 0;
+  }
+}
