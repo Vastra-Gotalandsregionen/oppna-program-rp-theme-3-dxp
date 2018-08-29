@@ -1,0 +1,133 @@
+table.miscibility-table {
+  background: #fff;
+  margin: 10px 0;
+  width: 100%;
+
+  thead {
+    tr {
+      th {
+        background: #006fa7;
+        border: 1px solid #fff;
+        border-width: 0 1px 0 1px;
+        color: #fff;
+        font-weight: bold;
+        padding: 8px;
+        text-align: center;
+        vertical-align: top;
+
+        &:first-child {
+          border-left: 0;
+        }
+
+        &:last-child {
+          border-right: 0;
+        }
+
+        a {
+          color: #fff;
+          font-weight: bold;
+          text-decoration: none;
+
+          &:hover {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+
+        .sortable {
+          color: #fff;
+          display: inline-block;
+
+          &:after {
+            color: #fff;
+            content: "\f0dc";
+            cursor: pointer;
+            font-family: "fontawesome-alloy";
+            padding: 5px;
+            speak: none;
+            visibility: visible;
+          }
+
+          &.descending:after {
+            content: "\f0dd";
+          }
+
+          &.ascending:after {
+            content: "\f0de";
+          }
+
+        }
+
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        border: 1px solid #009cd9;
+        padding: 8px;
+
+        &:first-child {
+          border-left: 0;
+        }
+
+        &:last-child {
+          border-right: 0;
+        }
+
+      }
+
+
+      &.miscibility-substance-row {
+        td {
+          background: #009cd9;
+          border: none;
+          color: #fff;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+
+        }
+      }
+
+      .table-cell-row {
+        margin-bottom: 4px;
+      }
+
+    }
+  }
+
+  .centered-column {
+    text-align: center;
+  }
+
+  .add-assessment {
+    a,
+    a:visited {
+      color: inherit;
+      float: right;
+    }
+  }  
+
+}
+
+table.highest-concentrations {
+
+  margin: 4px 0 8px 0;
+
+  thead th {
+    text-align: center;
+  }
+
+  thead th, tbody td {
+    border: 1px solid #aaaaaa;
+    padding: 3px 6px;
+  }
+}

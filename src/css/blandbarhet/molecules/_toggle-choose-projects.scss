@@ -1,0 +1,21 @@
+// Choose projects
+.toggle-choose-projects {
+  padding-right: 20px;
+
+  &:after {
+    content: "";
+    background: url(../images/icons/arrow_down.png) no-repeat 0 0;
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    margin: 5px 0 0 8px;
+    transition: all 150ms ease;
+  }
+
+  &.expanded:after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+  }
+
+}

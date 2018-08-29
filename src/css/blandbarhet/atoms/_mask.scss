@@ -1,0 +1,14 @@
+.mask {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #aaa;
+  z-index: 1000000000;
+  position: fixed;
+  opacity: 0.75;
+  top: 0;
+
+  &.visible {
+    display: block;
+  }
+}

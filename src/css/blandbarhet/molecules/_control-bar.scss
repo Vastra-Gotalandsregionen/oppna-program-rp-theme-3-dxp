@@ -1,0 +1,83 @@
+.icon-columns:before {
+  content: "\f0db";
+}
+
+.control-bar-container {
+  .control-bar {
+
+    background: #e9f4f9;
+    border: 1px solid #aaa;
+    border-width: 1px 0 1px 0;
+    margin: 10px 0;
+    overflow: visible !important;
+    padding: 8px;
+
+    @include clearfix();
+
+    .control-bar-left {
+      float: left;
+      text-align: left;
+      width: 49%;
+    }
+
+    .control-bar-right {
+      float: right;
+      text-align: right;
+      width: 49%;
+    }
+
+    .control-bar-item {
+      display: inline-block;
+    }
+
+    .control-bar-left {
+      .control-bar-item {
+        margin-right: 10px;
+      }
+    }
+
+    .control-bar-right {
+      .control-bar-item {
+        margin-left: 10px;
+      }
+    }
+
+    .control-bar-item {
+      .link-button {
+        background: transparent;
+        border-color: #aaa;
+        color: #444;
+
+        &:hover {
+          border-color: #000;
+          color: #000;
+        }
+      }
+      .ui-menubutton {
+        button {
+          background: transparent;
+          border-color: #aaa;
+          color: #444;
+
+          &.ui-state-hover,
+          &.ui-state-focus,
+          &.ui-state-active {
+            border-color: #000;
+            color: #000;
+          }
+
+        }
+      }
+      .ui-chkbox {
+        margin-top: 6px;
+      }
+      .label {
+        font-weight: normal;
+      }
+    }
+
+  }
+
+
+
+}

@@ -1,0 +1,44 @@
+// Explanation Section
+.explanation-section {
+  box-sizing: border-box;
+  width: 40%;
+
+  .explanation-section-body {
+    .explanation-row {
+        margin: 16px 0;
+        position: relative;
+        vertical-align: middle;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .information-code {
+            position: absolute;
+            top: 0;
+            top: calc(50% - 13px);
+        }
+
+        .explanation-text {
+            display: inline-block;
+            padding-left: 34px;
+        }
+
+    }
+
+    .information-code {
+        display: inline-block;
+        float: none;
+        font-size: 1.0em;
+        height: 16px;
+        line-height: 16px;
+        padding: 3px;
+    }
+
+  }
+
+}

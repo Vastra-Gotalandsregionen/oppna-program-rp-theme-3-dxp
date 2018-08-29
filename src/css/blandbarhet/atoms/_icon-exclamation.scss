@@ -1,0 +1,22 @@
+.icon-exclamation {
+    border: 3px solid;
+    border-radius: 50%;
+    box-sizing: content-box;
+    color: red;
+    display: inline-block;
+    font-size: 1.8em;
+    height: 24px;
+    margin-bottom: 10px;
+    margin-right: 4px;
+    padding: 4px;
+    text-align: center;
+    width: 24px;
+}
+
+.explanation-section .icon-exclamation {
+    font-size: 1.2em;
+    height: 12px;
+    left: -1px;
+    position: absolute;
+    width: 12px;
+}

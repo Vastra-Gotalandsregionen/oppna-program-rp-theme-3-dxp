@@ -1,0 +1,42 @@
+.paginator {
+
+  a,
+  a:visited {
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+
+    &.prev {
+      margin-right: 30px;
+    }
+
+    &.prev:before,
+    &.next:after {
+      content: "";
+      font-family: "fontawesome-alloy";
+      speak: none;
+    }
+
+    &.next:after {
+      font-family: "fontawesome-alloy";
+      content: "\f178"; // Long arrow right
+      margin-left: 5px;
+      speak: none;
+    }
+
+    &.prev:before {
+      font-family: 'fontawesome-alloy';
+      content: "\f177"; // Long arrow left
+      margin-right: 5px;
+      speak: none;
+    }
+
+  }
+
+}

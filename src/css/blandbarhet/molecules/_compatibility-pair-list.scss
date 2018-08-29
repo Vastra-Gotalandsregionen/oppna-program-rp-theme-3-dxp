@@ -1,0 +1,93 @@
+// Compatibility Pair List
+.compatibility-pair-list {
+
+  width: 100%;
+
+  .compatibility-header {
+
+    .information-code {
+        display: inline-block;
+        font-size: 1.25em;
+        float: none;
+        height: 21px;
+        line-height: 22px;
+        margin: 0 20px;
+        padding: 3px;
+        width: 20px;
+
+        position: absolute;
+        left: calc(50% - 36px);
+        top: 2px;
+
+    }
+
+    .substance1 {
+        display: inline-block;
+    }
+
+    .substance2 {
+        box-sizing: border-box;
+    }
+
+  }
+
+    .compatibility-summary {
+
+        .compatibility-summary-text {
+            padding-left: 50px;
+
+            p {
+                margin-top: 8px;
+            }
+        }
+    }
+
+  .compatibility-container {
+      width: 100%;
+  }
+
+  .compatibility-body {
+    .substances-info {
+        /*border-top: 1px solid #aaaaaa;*/
+        /*margin-top: 20px;*/
+        /*padding-top: 10px;*/
+
+        .substance-info {
+            float: left;
+            width: 50%;
+        }
+
+    }
+
+  }
+
+  .ui-datascroller-content {
+    background: transparent;
+  }
+
+  .ui-widget-content {
+    border: none;
+  }
+
+  .infusion-basis {
+      margin-bottom: 10px;
+  }
+
+  .concentration-basis {
+      margin-top: 8px;
+  }
+
+  // Reference Section
+  .reference-section {
+      border-bottom: 1px solid #aaa;
+      margin: 5px 0;
+      padding-bottom: 5px;
+      text-align: left;
+
+      td {
+        line-height: initial;
+      }
+  }
+  
+
+}

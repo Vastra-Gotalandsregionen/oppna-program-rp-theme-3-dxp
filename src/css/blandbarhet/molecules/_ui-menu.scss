@@ -1,0 +1,45 @@
+.ui-menu {
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 15px;
+  width: auto;
+  max-width: 400px;
+
+  .ui-menu-list {
+    .ui-menuitem {
+
+      margin: 5px 0;
+      padding: 5px 0;
+
+      &.ui-state-hover {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-weight: normal;
+        @include box-shadow(none);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+    }
+  }
+
+}
+
+.worklist-menu .ui-menu .ui-menu-list a {
+  display: inline-block;
+  width: 192px;
+}
+
+.edit-menu .ui-menu .ui-menu-list a {
+  display: inline-block;
+  width: 80px;
+}
+
+/*
+.worklist-menu .ui-menu .ui-menu-list a {
+  display: inline-block;
+  width: 150px;
+}*/

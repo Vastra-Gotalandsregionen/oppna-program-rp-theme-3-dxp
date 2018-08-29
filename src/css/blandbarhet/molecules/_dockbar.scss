@@ -1,0 +1,526 @@
+// This file should be "cleaned". Contains snippets from old "custom-common" as well as snippets from "Regionportalen Theme" and other fixes.
+
+.navbar .nav > li > a {
+  &:focus, &:hover {
+    color: #009AE5;
+  }
+}
+
+.dockbar-split {
+  .dockbar {
+    .nav {
+      li.dropdown {
+        > .dropdown-toggle {
+          @extend %dockbar-caret;
+        }
+
+        &.open, &.active, &.open.active {
+          > .dropdown-toggle {
+            background-color: transparent;
+            color: #FFF;
+
+            @extend %dockbar-caret;
+          }
+        }
+      }
+    }
+
+    .navbar-inner {
+      background: none;
+      visibility: hidden;
+    }
+  }
+
+  &.dockbar-ready .dockbar .navbar-inner {
+    visibility: visible;
+  }
+}
+
+.dockbar {
+  &.navbar .navbar-inner {
+    min-height: 40px;
+  }
+
+  .navbar-inner {
+    background: #333;
+
+    .container .btn-navbar {
+      color: #3a84c1;
+
+      .user-avatar-image {
+        position: relative;
+        top: 2px;
+        width: 28px;
+      }
+    }
+  }
+
+  .nav {
+    > li {
+      > a {
+        color: #FFF;
+        line-height: 31px;
+
+        &:focus, &:hover {
+          color: #FFF;
+        }
+
+        [class^="icon-"], [class*=" icon-"] {
+          margin-top: 3px;
+        }
+      }
+
+      &.active > a {
+        color: #FFF;
+
+        &, &:hover, &:focus {
+          background: #0066B3;
+        }
+      }
+    }
+
+    %dockbar-caret {
+      &, &:hover {
+        .caret {
+          border-bottom-color: #FFF;
+          border-top-color: #FFF;
+        }
+      }
+    }
+
+    li.dropdown {
+      > .dropdown-toggle {
+        @extend %dockbar-caret;
+      }
+
+      &.open, &.active, &.open.active {
+        > .dropdown-toggle {
+          background-color: #3EA9DB;
+          color: #FFF;
+
+          @extend %dockbar-caret;
+        }
+      }
+
+      .dropdown-menu, .site-administration-menu {
+        background: #009AE5;
+        border-width: 0;
+        left: 0;
+        margin: 0;
+        right: auto;
+
+        > li > a {
+          color: #FFF;
+          font-size: 0.9em;
+          font-weight: 300;
+
+          &:focus, &:hover {
+            background: #2FA4F5;
+            @include filter-gradient(#2FA4F5, #2FA4F5, vertical);
+          }
+
+          [class^="icon-"], [class*=" icon-"] {
+            margin-right: 3px;
+          }
+
+          .icon-spacer {
+            margin-right: 17px;
+          }
+        }
+
+        li.active > a {
+          background: #3B6DCC;
+        }
+      }
+
+      .dropdown-menu {
+        max-height: 300px;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        &:after, &:before {
+          border-width: 0;
+        }
+      }
+    }
+
+    li.dropdown.user-avatar {
+      .dropdown-menu {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+
+  .nav-account-controls li ul li a:hover i {
+    background-image: none;
+    text-decoration: none;
+  }
+
+  .divider-vertical {
+    border-left-color: #222;
+    border-right-color: #555;
+    display: none;
+  }
+}
+
+.app-view-taglib .lfr-header-row-content .select-all-entries {
+  left: 7px;
+  top: 14px;
+}
+
+.navbar {
+  .btn-group, .navbar-search {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .btn-navbar {
+    padding: 10px;
+  }
+
+  .container .btn-navbar {
+    background: transparent;
+    border-color: #DDD;
+
+    &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
+      background-color: #DDD;
+    }
+
+    .icon-bar {
+      background: #656565;
+    }
+  }
+
+  .icon-caret-down {
+    background: #27A7EB;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    height: auto;
+    margin-left: 5px;
+    padding: 1px 4px;
+    width: auto;
+  }
+
+  .nav > li.open > a {
+    background-color: #FFF;
+    color: #555;
+    text-decoration: none;
+  }
+
+  .navbar-inner {
+    min-height: 47px;
+  }
+}
+
+.dockbar {
+  .nav {
+    > li {
+      > a {
+        @include text-shadow(none);
+      }
+    }
+
+    li.dropdown {
+      .dropdown-menu {
+        @include border-radius(0);
+      }
+    }
+  }
+
+  .container .btn, .nav li.dropdown.user-avatar {
+    .user-avatar-image {
+      @include border-radius(50%);
+      @include box-shadow(0 0 0 2px #5594E0);
+    }
+  }
+}
+
+.navbar {
+  .container .btn {
+    &, .icon-bar {
+      @include box-shadow(0 1px 0 #FFF);
+    }
+  }
+
+  .icon-caret-down {
+    @include border-radius(50%);
+  }
+
+  .nav {
+    > li.open > a {
+      @include box-shadow(inset 0 3px 8px rgba(0, 0, 0, 0.125));
+    }
+  }
+}
+
+.dockbar .container .btn {
+  @include box-shadow(none);
+}
+
+.dockbar {
+  visibility: visible;
+}
+
+  .dockbar .nav-add-controls>li.toggle-controls a {
+      clip: rect(auto, auto, auto, auto) !important;
+  }
+
+
+  .dockbar-split .dockbar,
+  .dockbar-split .dockbar.navbar-static-top .collapse .nav-account-controls {
+      position: static;
+  }
+
+.dockbar-split .dockbar .navbar-inner {
+  background: none;
+
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  width: auto
+}
+
+  .dockbar-split .dockbar .navbar-inner .container {
+      float: right;
+      position: relative;
+      width: auto;
+  }
+
+  .dockbar-split .dockbar .navbar-inner .nav > li {
+      background: #fff url(../images/navigation/top-navigation-bg.png) bottom left repeat-x;
+      background: none;
+  }
+
+  /* Hide Liferay notifications */
+  /* Hide my sites */
+  /* Hide user avatar image */
+  .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications,
+  .dockbar-split .dockbar .navbar-inner .nav > li.my-sites,
+  .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar span.nav-item-label > img {
+      display: none;
+  }
+
+  /* Show my sites when it should be shown - controlled through theme settings */
+  .show-my-sites .dockbar .navbar-inner .nav > li.my-sites {
+      display: block;
+  }
+
+  .dockbar-split .dockbar .navbar-inner .nav > li > a,
+  .dockbar-split .dockbar .navbar-inner .nav > li > a:hover {
+      color: #777;
+      line-height: 21px;
+  }
+
+  .dockbar-split .dockbar .navbar-inner .nav > li > a:hover {
+      background: #3a84c1;
+      color: #fff;
+  }
+
+  .navbar .icon-caret-down {
+      background: transparent;
+  }
+
+  .navbar a:hover .icon-caret-down {
+      background: transparent;
+  }
+
+  .navbar a:hover .icon-caret-down:before {
+      color: #fff;
+  }
+
+  .dockbar-split .dockbar .navbar-inner .nav li.dropdown.open > .dropdown-toggle {
+      background: #3a84c1;
+  }
+
+  .dockbar .nav li.dropdown .dropdown-menu,
+  .dockbar .nav li.dropdown .site-administration-menu {
+      background: #3a84c1;
+  }
+
+  .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a,
+  .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a:hover {
+      color: #fff;
+  }
+
+  .dockbar .nav li.dropdown .dropdown-menu > li > a,
+  .dockbar .nav li.dropdown .site-administration-menu > li > a {
+      font-size: 1.0em;
+  }
+
+
+  @include respond-to(phone, tablet) {
+
+    .dockbar-split .dockbar,
+    .dockbar {
+        float: right;
+        float: left;
+        height: auto;
+        position: relative;
+        z-index: 401;
+
+        .info-items {
+            height: auto;
+            position: static;
+            width: 300px;
+        }
+
+        .navbar-inner {
+            width: auto;
+
+            .btn-navbar {
+                background: transparent;
+                border: none;
+                float: right;
+                font-size: 24px;
+                padding: 12px 15px;
+
+                &:hover {
+                    background-color: #0083be;
+                    color: #fff;
+                }
+
+                &.open {
+                    background-color: #548332;
+                    color: #fff;
+                }
+
+                .user-avatar-image {
+                    height: 28px;
+                    width: 28px;
+                }
+            }
+
+            .nav-account-controls {
+                padding: 0 5px;
+
+                .user-avatar-image {
+                    display: none;
+                }
+            }
+
+            .nav-add-controls {
+                background: transparent;
+                border-top-width: 0;
+                position: static;
+                z-index: 350;
+                padding: 0 5px;
+
+                > li {
+                    float: none;
+                    margin: 0;
+                    position: relative;
+
+                    &.toggle-controls a {
+                        clip: rect(auto auto auto auto);
+                        position: static;
+                        visibility: visible;
+                    }
+
+                    .page-preview-controls {
+                        display: none;
+                    }
+
+                    > a {
+                        background: transparent;
+                        text-align: left;
+                        white-space: nowrap;
+
+                        &:hover {
+                            background: #F3f3f3;
+                        }
+
+                        [class^="icon-"], [class^="icon-"],
+                        [class*=" icon-"] {
+                            font-size: 22px;
+                            margin-top: 0;
+                        }
+
+                        &.toggle-controls-link {
+                            background: transparent;
+
+                            [class^="icon-"],
+                            [class^="icon-"],
+                            [class*=" icon-"] {
+                                color: #FFF;
+                            }
+                        }
+
+                        .nav-item-label {
+                            background: transparent;
+                            display: inline;
+                            left: 0;
+                            margin-left: 0;
+                            margin-top: 0;
+                            padding: 0;
+                            position: relative;
+                        }
+
+                        &:hover .nav-item-label {
+                            display: inline;
+                        }
+
+                        .icon-caret-down {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .nav-collapse {
+                z-index: 400;
+
+                &.open {
+                    overflow: visible;
+                }
+
+                > .nav {
+                    background: #009AE5;
+                    border-width: 0;
+                    left: auto;
+                    margin: 0;
+                    min-width: 160px;
+                    position: absolute;
+                    right: 0;
+                    z-index: 400;
+
+                    > li {
+                        &.dropdown {
+                            .dropdown-menu li a {
+                                font-size: 16px;
+                                line-height: 32px;
+                            }
+
+                            &.open {
+                                > .dropdown-toggle {
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+
+                        > a {
+                            color: #FFF;
+                            font-size: 16px;
+                            margin: 5px 0;
+                            padding: 6px 15px;
+
+                            &:focus, &:hover {
+                                background-color: #5BBAE8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .portlet-dockbar {
+        float: left;
+    }
+
+    .signed-out #_145_navAddControlsNavbarBtn {
+        display: none;
+    }
+
+  }

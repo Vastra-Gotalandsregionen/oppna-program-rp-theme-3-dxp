@@ -1,0 +1,40 @@
+.ui-menubutton {
+  button {
+
+    background: #fff;
+    border: 1px solid #aaa;
+    color: #333;
+    display: inline-block;
+    padding: 6px;
+
+    @include border-radius(4px);
+
+    .ui-button-text {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &.ui-button-text-icon-left {
+      .ui-button-text {
+        padding-left: 1.1em;
+        padding-right: 0;
+      }
+    }
+
+    &.ui-button-text-icon-right {
+      .ui-button-text {
+        padding-left: 0;
+        padding-right: 1.1em;
+      }
+    }
+
+    &.ui-state-hover,
+    &.ui-state-focus,
+    &.ui-state-active {
+      border-color: #000;
+      color: #333;
+      @include box-shadow(none);
+    }
+
+  }
+}

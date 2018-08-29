@@ -1,0 +1,17 @@
+.paginator-bar {
+  @include clearfix();
+  padding: 8px;
+
+  .paginator-info {
+    float: left;
+    max-width: 59%;
+    position: relative;
+  }
+
+  .paginator {
+    float: right;
+    max-width: 39%;
+    position: relative;
+  }
+
+}

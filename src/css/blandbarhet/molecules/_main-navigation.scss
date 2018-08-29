@@ -1,0 +1,219 @@
+#navigation {
+  margin: 0 0 5px 0;
+
+  > ul {
+    background: #2f6ea1 url(../images/navigation/navigation-bg-normal.png) top left repeat-x;
+    border-bottom: 1px solid #245780;
+    border-top: 1px solid #29699e;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    padding: 1px 2px;
+    position: relative;
+    z-index: 10;
+    @include border-radius(3px);
+
+    li {
+      background: url(../images/navigation/navigation-separator.png) top right repeat-y;
+      display: block;
+      float: left;
+      line-height: 1.0;
+      padding: 0 2px 0 0;
+      position: relative;
+      zoom: 1;
+
+      a {
+        background: transparent;
+        color: #fff;
+        display: block;
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+        font-size: 1.1em;
+        font-weight: normal;
+        line-height: 1.0;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        text-shadow: none;
+
+        span {
+          display: block;
+          min-height: 16px;
+          padding: 10px 14px;
+          @include transition(all 0.4s ease-in-out);
+        }
+
+      }
+
+      &:first-child {
+        > a {
+          > span {
+           background: url(../images/navigation/nav-home-icon.png) 50% 50% no-repeat;
+           padding-left: 30px;
+           font-size: 0;
+           text-indent: -9999em;
+          }
+        }
+      }
+
+      // Hover
+      &.hover,
+      &:hover {
+        > a {
+          background: #3a84c1 url(../images/navigation/navigation-bg-hover.png) top left repeat-x;
+          color: #fff;
+        }
+      }
+
+      // Selected
+      &.selected,
+      &.selected.hover,
+      &.selected:hover {
+        > a {
+          background: #548332 url(../images/navigation/navigation-bg-active.png) top left repeat-x;
+          color: #fff;
+        }
+      }
+
+    }
+
+  }
+
+  // Drop down navigation
+  .nav-list-sub-wrap {
+    background: transparent url(../images/navigation/navigation-sub-bg-arrow.png) top left no-repeat;
+    display: none;
+    left: 0;
+    padding: 11px 0 0 0;
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    z-index: 598;
+
+    ul {
+      background: #f9f9fb;
+      border: 1px solid #bbc6ce;
+      border-top: 0px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 598;
+
+      li {
+        background: #f9f9fb;
+        border-bottom: 1px solid #dadfe5;
+        display: block;
+        float: none;
+        margin: 0;
+        padding: 0;
+
+        &.last {
+          border-bottom: 0;
+        }
+
+        a {
+          background: transparent;
+          color: #2f72a9;
+          display: block;
+          margin: 0;
+          padding: 0;
+          font-size: 1.1em;
+          padding: 10px;
+          text-decoration: none;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  // Display drop down navigation on hover
+  ul.nav-list > li:hover > .nav-list-sub-wrap {
+    // Drop down navigation is turned off by request 2015-12-02
+    //display: block;
+    display: none;
+  }
+
+
+}
+
+.ie7 {
+  #navigation {
+    .nav-list-sub-wrap {
+      ul {
+        li {
+          a {
+            display: inline-block;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(phone, tablet) {
+
+  #navigation {
+      display: none;
+
+      &.open {
+          display: block;
+
+          .navbar-inner {
+              @include border-radius(3px);
+
+              padding: 10px;
+
+              .nav-collapse {
+                  height: auto;
+                  overflow: visible;
+              }
+          }
+      }
+
+      .nav {
+          margin: 0;
+      }
+
+      ul.nav-list {
+          > li,
+          > li:hover {
+              background: none;
+              border-bottom: 1px solid #006b9b;
+              float: none;
+
+              .nav-list-sub-wrap {
+                  display: none;
+              }
+
+              &.selected .nav-list-sub-wrap {
+                  background: #548332;
+                  display: block;
+                  padding: 0 0 0 10px;
+                  position: static;
+                  width: auto;
+                  z-index: 1;
+              }
+
+              a {
+                  border-bottom: 1px solid #0083be;
+              }
+
+              &:last-child {
+                  border-bottom: none;
+
+                  a {
+                      border-bottom: none;
+                  }
+              }
+
+          }
+      }
+  }
+
+}

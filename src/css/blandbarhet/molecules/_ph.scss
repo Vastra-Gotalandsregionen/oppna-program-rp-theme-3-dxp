@@ -1,0 +1,24 @@
+// pH
+.ph {
+    border-radius: 3px;
+    padding: 2px 4px;
+
+    &.acid {
+        background-color: #ff7c80;
+        border: 1px solid #a54c57
+    }
+    &.weak-acid {
+        background-color: #ffd7a3;
+        border: 1px solid #a58b6a
+
+    }
+    &.neutral {
+        background-color: #ebf1de;
+        border: 1px solid #a1a598
+
+    }
+    &.base {
+        background-color: #8db4e2;
+        border: 1px solid #526a88
+    }
+}

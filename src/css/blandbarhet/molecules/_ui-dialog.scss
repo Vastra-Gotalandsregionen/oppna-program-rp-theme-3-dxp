@@ -1,0 +1,93 @@
+#wrapper {
+  .ui-dialog {
+    background: #fff;
+    font-size: 1em;
+    width: 300px;
+
+    @include border-radius(4px);
+
+    .ui-dialog-title {
+      line-height: 26px;
+    }
+
+    .ui-dialog-titlebar {
+      background: #006fa7;
+      color: #fff;
+      text-shadow: none;
+      font-weight: normal;
+      font-size: 1.1em;
+      @include text-shadow(none);
+    }
+
+    .ui-dialog-titlebar-close {
+
+      color: #fff;
+      font-size: 1.3em;
+      font-weight: normal;
+      opacity: 0.7;
+      padding: 5px;
+      text-decoration: none;
+      @include box-shadow(none);
+      @include transition(all 0.15s ease-in-out);
+
+      &:before {
+        content: "\f00d";
+        font-family: "fontawesome-alloy";
+        speak: none;
+      }
+
+      &.ui-state-hover {
+        background: none;
+        border: none;
+        color: #fff;
+        opacity: 1.0;
+        @include box-shadow(none);
+      }
+
+      .ui-icon-closethick {
+        display: none;
+      }
+
+    }
+
+    .ui-dialog-content {
+      background-color: #FFF;
+      max-height: 80vh !important;
+      padding: 15px;
+      text-align: left;
+    }
+
+    .ui-dialog-buttonpane {
+      background: #eef5fa;
+      background-image: none;
+      border-width: 1px 0 0 0;
+      border-top: 1px solid #c4ced5;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0.3em 1em 0.5em 0.4em;
+      text-align: center;
+      width: 300px;
+    }
+
+  }
+
+  .ie8 {
+    .ui-dialog {
+      overflow: initial;
+      max-height: 600px;
+
+      .ui-dialog-titlebar {
+        width: 580px;
+      }
+
+      .ui-dialog-content {
+        max-height: 580px;
+        width: 610px;
+      }
+    }
+
+    .ui-dialog-content {
+      width: 90vw;
+    }
+  }
+}

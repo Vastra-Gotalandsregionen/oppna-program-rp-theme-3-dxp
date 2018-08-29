@@ -1,0 +1,121 @@
+.details-dialog {
+
+  .history-wrap {
+    max-width: 1150px;
+  }
+
+  .messages-container {
+
+    .portlet-msg-info {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+  .alloy-row {
+    border-bottom: 1px solid $blandbarhet-alto;
+
+    &.no-border {
+      border-bottom: 0;
+    }
+
+    &.row-fluid {
+      [class*="span"] {
+        min-height: auto;
+      }
+    }
+
+    .alloy-column {
+      .column-content {
+        margin: 5px;
+        padding: 5px;
+      }
+    }
+
+    &:first-child {
+      .alloy-column {
+        .column-content {
+          padding-top: 0;
+        }
+      }
+    }
+
+    &:last-child {
+      .alloy-column {
+        .column-content {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &.column-separator {
+      .alloy-column {
+        .column-content {
+          border-right: 1px solid $blandbarhet-alto;
+        }
+        &:last-child {
+          .column-content {
+            border-right: none;
+          }
+        }
+      }
+    }
+
+  }
+
+  .last-edited {
+    font-style: italic;
+    text-align: right;
+  }
+
+  .span6 {
+
+    &:first-child {
+      margin-left: 0;
+      margin-right: percentage(2.5641/2/100);
+    }
+
+    &:last-child {
+      margin-left: percentage(2.5641/2/100);
+      margin-right: 0;
+    }
+
+    .field-item:not(.block) {
+      .field-item-label {
+        overflow: hidden;
+        width: 49.9%;
+      }
+      .field-item-content {
+        overflow: hidden;
+        width: 49.9%;
+
+        select {
+          width: 90%;
+        }
+
+      }
+    }
+  }
+
+  .span12 {
+    .field-item:not(.block) {
+      .field-item-label {
+        width: 24.9%;
+      }
+      .field-item-content {
+        width: 74.9%;
+      }
+    }
+  }
+
+  textarea {
+    min-height: 100px;
+    width: 90%;
+  }
+
+
+}

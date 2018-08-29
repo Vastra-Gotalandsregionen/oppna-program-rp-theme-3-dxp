@@ -1,0 +1,63 @@
+
+
+// Header Toggle Trigger
+.header-toggle-trigger {
+  cursor: pointer;
+
+  .toggle-symbol {
+      position: absolute;
+      right: 10px;
+      -webkit-transition: all 150ms;
+      transition: all 150ms;
+
+      &.rotated {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+
+      &.expanded {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+
+      &.ie8-fix {
+          display: none;
+      }
+
+  }
+
+  &:hover {
+    .toggle-symbol {
+      -webkit-transform: scale(1,1.3);
+      -ms-transform: scale(1,1.3);
+      transform: scale(1,1.3);
+
+      &.rotated,
+      &.expanded {
+        -webkit-transform: rotate(90deg) scale(1,1.3);
+        -ms-transform: rotate(90deg) scale(1,1.3);
+        transform: rotate(90deg) scale(1,1.3);
+      }
+
+    }
+  }
+}
+
+.ie8 {
+  .header-toggle-trigger {
+    .toggle-symbol {
+
+      &.ie8-fix,
+      &.ie8-fix.expanded {
+        display: inline;
+      }
+
+      &.expanded {
+        display: none;
+      }
+
+    }
+  }
+}

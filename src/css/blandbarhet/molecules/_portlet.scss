@@ -1,0 +1,78 @@
+.portlet {
+  background-color: transparent;
+  margin: 0 0 15px 0;
+  padding: 0;
+  text-align: left;
+
+  .portlet-topper {
+    background: #2f6ea1 url(../images/portlet/portlet-hd-bg-2.png) top left repeat-x;
+    border: 1px solid #245780;
+    position: relative;
+    @include border-radius(6px 6px 0 0);
+    @include box-shadow(#ccc 0 1px 4px 0);
+
+    .portlet-title {
+      color: #fff;
+      float: none;
+      font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+      font-size: 1.3em;
+      font-weight: normal;
+      line-height: 1.0;
+      padding: 7px 10px;
+
+      .icon,
+      img {
+        display: none;
+      }
+    }
+
+    a.portlet-icon-back,
+    a.portlet-icon-back:hover {
+      background: none;
+      color: #fff;
+      padding: 5px;
+      text-decoration: none;
+    }
+
+    a.portlet-icon-back:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  .portlet-content {
+    background: #fff;
+    border: 1px solid #cad5de;
+    border-width: 0 1px 1px 1px;
+    padding: 12px;
+    position: relative;
+    @include border-radius(0 0 6px 6px);
+    @include box-shadow(#ccc 0 1px 4px 0);
+  }
+
+
+}
+
+.portlet-borderless-container {
+  background-color: transparent;
+
+  .portlet-options {
+    a.dropdown-toggle {
+          background: url(../images/portlet/options_borderless.png) 0px 2px;
+    }
+  }
+
+}
+
+.ie .portlet-title {
+  padding-bottom: 5px;
+}
+
+.ie6 .portlet-topper {
+  zoom: 1;
+}
+
+.portlet-borderless-bar,
+.portlet-topper-toolbar{
+    z-index: 3;
+}

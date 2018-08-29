@@ -1,0 +1,25 @@
+#content {
+	min-height: 400px;
+	position: relative;
+}
+
+/* Hide node info */
+.content-inner > .portlet-msg-info {
+	display: none;
+}
+
+body > .portlet-msg-info {
+	display: none;
+}
+
+#main-content {
+	margin: 15px 0;
+}
+
+.has-breadcrumbs #main-content {
+	margin-top: 5px;
+}
+
+#content > .alert-info {
+	display: none;
+}

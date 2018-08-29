@@ -1,0 +1,23 @@
+.substance-autocomplete-container {
+
+  position: relative;
+
+  .substance-autocomplete {
+      width: 70%;
+
+      input {
+          margin-bottom: 0;
+          width: 85%;
+      }
+
+  }
+
+  .clear-button {
+    display: inline-block;
+    color: #333;
+    height: 20px;
+    margin-left: 1.2em;
+  }
+
+
+}

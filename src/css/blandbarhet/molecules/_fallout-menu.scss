@@ -1,0 +1,27 @@
+
+.fallout-menu {
+  background: #fff;
+  border: 1px solid #777;
+  display: none;
+  padding: 10px;
+
+  //bottom: -100px;
+  position: absolute;
+  z-index: 2;
+
+  @include border-radius(4px);
+
+  &.show {
+    display: inline-block;
+  }
+
+  &.fallout-menu-up:before {
+    width: 5px;
+  	height: 5px;
+  	border-left: 5px solid transparent;
+  	border-right: 5px solid transparent;
+
+  	border-bottom: 5px solid #000;
+  }
+
+}

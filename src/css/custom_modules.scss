@@ -1011,7 +1011,7 @@
       background: transparent url(../images/icons/icon-rp-close.png) 0 0 no-repeat;
       cursor: pointer;
       float: right;
-      height: 24px;
+      //height: 24px;
       margin: 0px;
       opacity: 0.7;
       padding: 0px;
@@ -1035,6 +1035,10 @@
       text-align: center;
       width: 300px;
     }
+
+	&.reference-dialog {
+	  left: auto !important;
+	}
       
   }
   
@@ -1059,7 +1063,12 @@
         text-decoration: none;
         text-shadow: none;
       }
-  } 
+
+  }
+
+	.ui-chkbox .ui-chkbox-box {
+		box-sizing: content-box;
+	}
 	
 	
 	/*------- Primefaces paginator -------*/

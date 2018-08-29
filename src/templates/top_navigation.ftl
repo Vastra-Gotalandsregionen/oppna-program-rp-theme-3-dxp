@@ -19,7 +19,7 @@
                     <i class="icon-unlock"></i> <span>${sign_out_text}</span>
                 </a>
             </li>
-		<#else>fdser
+		<#else>
 			<li class="top-nav-signin last">
                 <a class="signin-link" href="${sign_in_url}">
                     <i class="icon-lock"></i> <span>${sign_in_text}</span>

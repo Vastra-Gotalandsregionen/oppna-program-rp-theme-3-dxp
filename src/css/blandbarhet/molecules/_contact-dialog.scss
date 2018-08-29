@@ -1,0 +1,83 @@
+.contact-dialog-content {
+
+  > div {
+    margin-bottom: 10px;
+  }
+
+  span.label {
+    float: left;
+    line-height: 20px;
+    text-align: left;
+    white-space: normal !important;
+    width: auto;
+  }
+
+  select {
+    height: 20px;
+    width: 275px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 265px;
+  }
+
+  .button-row {
+    text-align: center;
+  }
+
+  .contact-spinner {
+    height: 24px;
+    margin: 6px 0 11px 20px;
+    position: absolute;
+  }
+
+  .content-section {
+    width: auto;
+
+    .field {
+      float: left;
+      margin-right: 15px;
+
+      > span {
+          display: block;
+          float: none;
+      }
+
+      > input {
+          display: block;
+      }
+    }
+
+    input[type=submit] {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    input[type=text] {
+      height: 16px;
+      padding: 2px 4px;
+    }
+
+    select {
+      height: 20px;
+      padding: 1px;
+    }
+
+    .bordered-section {
+      border: solid #888;
+      border-width: 0 0 1px 0;
+      padding: 5px 0;
+
+      &:first-child {
+        border-top-width: 1px;
+      }
+    }
+
+
+  }
+
+}

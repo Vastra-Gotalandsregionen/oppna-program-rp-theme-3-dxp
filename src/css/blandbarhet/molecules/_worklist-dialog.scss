@@ -1,0 +1,10 @@
+.worklist-dialog {
+
+  .label {
+    font-weight: normal;
+    margin-right: 10px;
+
+    @include text-shadow(none);
+  }
+
+}

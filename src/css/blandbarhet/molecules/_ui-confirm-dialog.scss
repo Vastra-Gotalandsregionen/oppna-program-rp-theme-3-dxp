@@ -1,0 +1,22 @@
+.ui-confirm-dialog {
+    width: 300px;
+    max-width:350px;
+
+    .confirm-dialog-button {
+      background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
+      border: 1px solid #2f71a8;
+      border-color: #2f71a8 #052a73 #052a73 #2f71a8;
+      color: #fff;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 3;
+      margin-right: 10px;
+      padding: 7px 20px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: none;
+
+      @include border-radius(3px);
+    }
+}

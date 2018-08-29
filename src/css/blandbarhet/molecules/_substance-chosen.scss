@@ -1,0 +1,37 @@
+ul.chosen-substances {
+  list-style: none;
+  margin-bottom: 20px;
+
+  li {
+
+    background: #e9f4f9;
+
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 5px;
+
+    @include border-radius(4px);
+
+    .substance-name {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .remove-substance {
+      color: #d21212;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      .icon-text {
+        font-size: 0;
+        text-indent: -9999em;
+      }
+    }
+
+
+  }
+
+}

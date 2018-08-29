@@ -1,0 +1,30 @@
+.link-button,
+.link-button:visited {
+
+  background: #fff;
+  border: 1px solid #aaa;
+  color: #333;
+  display: inline-block;
+  padding: 6px;
+  text-decoration: none;
+
+  @include border-radius(4px);
+
+  &:hover {
+    border-color: #000;
+    color: #333;
+  }
+
+  &.no-border {
+    border: none;
+  }
+
+  &.no-text {
+    .text-label {
+      clip: rect(0 0 0 0);
+      position: absolute;
+    }
+  }
+
+
+}

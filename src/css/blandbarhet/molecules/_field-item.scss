@@ -1,0 +1,31 @@
+.field-item {
+  @include clearfix();
+
+  margin: 5px 0;
+  padding: 5px 0;
+
+  .field-item-label {
+    float: left;
+    width: 24.9%;
+  }
+
+  .field-item-content {
+    float: left;
+    width: 74.9%;
+  }
+
+  &.block {
+
+    .field-item-label,
+    .field-item-content {
+      float: none;
+      width: 100%;
+    }
+
+    .field-item-label {
+      margin-bottom: 2px;
+    }
+
+  }
+
+}

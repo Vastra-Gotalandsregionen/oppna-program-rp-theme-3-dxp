@@ -1,0 +1,53 @@
+.portlet-navigation {
+
+  .nav-menu {
+    margin: 0;
+    max-width: 250px;
+
+    h2 {
+      font-size: 1.3em;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0;
+
+      a {
+        background: $blandbarhet-blue;
+        color: $blandbarhet-white;
+        display: block;
+        margin: 0;
+        padding: 10px 15px;
+        text-decoration: none;
+        @include border-radius(3px 3px 0 0);
+      }
+    }
+
+    ul {
+      list-style: none;
+      background: $blandbarhet-white;
+      border: 1px solid shade($blandbarhet-linkwater, 10%);
+      margin: 0;
+      padding: 0;
+      @include border-radius(0 0 3px 3px);
+
+      li {
+        border-bottom: 1px solid shade($blandbarhet-linkwater, 10%);
+        margin: 0;
+        padding: 0;
+
+        a {
+          background: $blandbarhet-white;
+          display: block;
+          margin: 0;
+          padding: 7px 15px;
+          text-decoration: none;
+
+          &:hover {
+            background: $blandbarhet-linkwater;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+}

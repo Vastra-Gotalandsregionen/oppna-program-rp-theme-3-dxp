@@ -1,0 +1,23 @@
+.miscibility-admin-portlet {
+
+  .box-section {
+    &.box-section-search {
+      width: 68.4%;
+    }
+    &.box-section-worklist {
+      width: 28.4%;
+    }
+  }
+
+  .box-section-search {
+    .control-bar {
+      .control-bar-left {
+        width: 69.9%;
+      }
+      .control-bar-right {
+        width: 29.9%;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+.compatibility-container {
+
+  fieldset {
+
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    margin: 6px 0 16px 0;
+    padding: 8px 12px;
+    width: auto;
+
+    legend {
+      border: 0;
+      font-size: 1em;
+      line-height: inherit;
+      margin: 0;
+      padding: 0 4px;
+      width: auto;
+    }
+
+  }
+
+}

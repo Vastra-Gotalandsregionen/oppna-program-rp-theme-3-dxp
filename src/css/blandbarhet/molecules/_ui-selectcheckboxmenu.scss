@@ -1,0 +1,43 @@
+.ui-selectcheckboxmenu {
+  background: #fff;
+  border: 1px solid #aaa;
+  color: #333;
+  padding: 6px;
+  @include box-shadow(none);
+
+  &.simple-button {
+    background: transparent;
+    border: none;
+    //padding: 3px;
+  }
+
+  .ui-selectcheckboxmenu-label {
+
+    font-size: 1em;
+    line-height: 14px;
+    margin: 0;
+    padding: 0 15px 0 0;
+
+    &.ui-state-hover,
+    &.ui-state-focus,
+    &.ui-state-active {
+      background: none;
+      border: none;
+      color: #333;
+      @include box-shadow(none);
+    }
+
+  }
+
+  .ui-selectcheckboxmenu-trigger {
+    background: transparent;
+    border: none;
+    @include box-shadow(none);
+
+    .ui-icon {
+      margin-top: 5px;
+    }
+  }
+
+
+}
