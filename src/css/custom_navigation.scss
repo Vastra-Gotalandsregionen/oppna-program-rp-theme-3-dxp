@@ -539,7 +539,9 @@
     }
 
     .span3 ul.site-navigation-list > li,
-    .span4 ul.site-navigation-list > li {
+    .span4 ul.site-navigation-list > li,
+    .col-md-3 ul.site-navigation-list > li,
+    .col-md-4 ul.site-navigation-list > li {
         width: 100%;
     }
 

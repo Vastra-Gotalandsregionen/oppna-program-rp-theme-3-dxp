@@ -24,34 +24,34 @@
 		-moz-border-radius-topleft: 6px;
 		-moz-border-radius-topright: 6px;
 		-webkit-border-radius: 6px 6px 0 0;
-		border-radius: 6px 6px 0 0;	
+		border-radius: 6px 6px 0 0;
 		position: relative;
-		
+
 		border: 1px solid #245780;
-		
+
 		-moz-box-shadow: 0px 1px 4px 0px #cccccc;
 		-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
-		box-shadow: 0px 1px 4px 0px #cccccc;	
+		box-shadow: 0px 1px 4px 0px #cccccc;
 	}
 
 	.portlet .portlet-content {
 		background: #fff;
 		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
-		
+
 		border: 1px solid #cad5de;
-		
+
 		border-width: 0 1px 1px 1px;
 		-moz-border-radius-bottomleft: 6px;
 		-moz-border-radius-bottomright: 6px;
 		-webkit-border-radius: 0 0 6px 6px;
-		border-radius:  0 0 6px 6px;	
-		
+		border-radius:  0 0 6px 6px;
+
 		-moz-box-shadow: 0px 1px 4px 0px #cccccc;
 		-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
-		box-shadow: 0px 1px 4px 0px #cccccc;	
-		
+		box-shadow: 0px 1px 4px 0px #cccccc;
+
 		//padding: 12px;
-		position: relative;	
+		position: relative;
 	}
 
 	.portlet-title {
@@ -134,7 +134,7 @@
 	ul.section-navigation-list {
 		list-style-type: none;
 		margin: 0;
-		padding: 0;	
+		padding: 0;
 	}
 
 	ul.section-navigation-list li {
@@ -142,7 +142,7 @@
 		float: left;
 		margin: 10px 30px 10px 0;
 		width: 290px;
-		
+
 		margin: 10px 2% 10px 0;
 		width: 47.9%;
 	}
@@ -156,7 +156,7 @@
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
 		border-radius: 6px;
-		display: block;	
+		display: block;
 		padding: 10px;
 		text-decoration: none;
 	}
@@ -258,7 +258,7 @@
 	    display: none;
 	}
 
-	/* hide controls */ 
+	/* hide controls */
 	.portlet-alerts .entry .control-entry {
 	    display: none;
 	}
@@ -268,7 +268,7 @@
 
 	.controls-hidden .portlet-alerts .portlet-borderless-container {
 		min-height: 0;
-	} 
+	}
 
 	.controls-hidden .portlet-alerts .aui-tabview-list {
 	    display: none;
@@ -284,9 +284,9 @@
 	}
 
 	.portlet-alerts .portlet-body .entry .entry-title .edit-actions table {
-	    /* for some reason IE gets fixed table layout below, this doesn't work here 
+	    /* for some reason IE gets fixed table layout below, this doesn't work here
 	       the edi actions swells out to 100% width */
-	    table-layout: auto !important; 
+	    table-layout: auto !important;
 	}
 
 
@@ -346,7 +346,7 @@
 	    padding-left: 6px;
 	}
 
-	/* hide controls */ 
+	/* hide controls */
 	.portlet-announcements .entry .control-entry {
 	    display: none;
 	}
@@ -362,7 +362,7 @@
 	    background-color: #FFFFBB;
 	    color: #333;
 	    padding-left: 6px;
-	    
+
 	}
 
 	/*------- Portlet Knowledge Base Display/Knowledge Base Aggregator ------*/
@@ -380,7 +380,7 @@
 	.knowledge-base-portlet-display .kb-entity-body,
 	.knowledge-base-portlet-aggregator .kb-entity-body {
 	  text-align: left;
-	  
+
 	  /*
 	  line-height: 1.7;
 	  font-size: 12pt;
@@ -404,7 +404,7 @@
 	}
 
 	.knowledge-base-portlet-display .kb-article-comments .lfr-panel-title,
-	.knowledge-base-portlet-aggregator .kb-article-comments .lfr-panel-title { 
+	.knowledge-base-portlet-aggregator .kb-article-comments .lfr-panel-title {
 		/*font-size: 85%;*/
 	}
 
@@ -474,11 +474,11 @@
 		border-radius: 4px;
 		-moz-box-shadow: 0px 1px 4px 0px #cccccc;
 		-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
-		box-shadow: 0px 1px 4px 0px #cccccc;	
+		box-shadow: 0px 1px 4px 0px #cccccc;
 		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 		padding: 12px;
-		position: relative;	
-		
+		position: relative;
+
 	}
 
 	.knowledge-base-portlet-aggregator .search-results {
@@ -511,7 +511,7 @@
 	}
 
 	.portlet-blogs .search-form .aui-search-bar {
-		display: none;	
+		display: none;
 	}
 
 	.portlet-blogs .taglib-header {
@@ -556,10 +556,10 @@
 
 	.portlet-blogs .blogs-entries-wrap .entry-title a:hover {
 		color: #2f72a9;
-		text-decoration: underline;	
+		text-decoration: underline;
 	}
 
-	.portlet-blogs .entry-title a {
+	#wrapper .portlet-blogs .entry-title a {
 		color: #666;
 		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
 		font-weight: normal;
@@ -619,7 +619,7 @@
 	.portlet-blogs h1.header-title,
 	.portlet-blogs h3.header-title {
 		color: #444;
-		font-size: 1.8em;	
+		font-size: 1.8em;
 	}
 
 	/* Paging full */
@@ -646,14 +646,14 @@
 		background-image: url(../images/paginator/pager-simple-sprite.png);
 		background-repeat: no-repeat;
 		border: none;
-		color: #255d8c;	
+		color: #255d8c;
 		display:block;
 		height: 25px;
 		line-height: 25px;
 		padding: 2px 30px;
 		position: relative;
 		text-decoration: none;
-		position: relative;	
+		position: relative;
 	}
 
 	.portlet-blogs .entry-navigation a.previous:hover,
@@ -688,13 +688,13 @@
 		font-size: 1.3em;
 		font-weight: normal;
 	}
-		
+
 	.portlet-blogs .add-comment {}
 
 	.portlet-blogs .add-comment a.taglib-icon {
 		background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
 		border: 1px solid #2f71a8;
-		border-color: #2f71a8 #052a73 #052a73 #2f71a8;  
+		border-color: #2f71a8 #052a73 #052a73 #2f71a8;
 		-moz-border-radius: 3px;
 		-webkit-border-radius: 3px;
 		border-radius: 3px;
@@ -708,7 +708,7 @@
 		padding: 10px 15px;
 		position: relative;
 		text-shadow: none;
-		
+
 	}
 
 	.portlet-blogs .add-comment a.taglib-icon img {
@@ -734,7 +734,7 @@
 	.portlet-blogs .add-comment a.taglib-icon .taglib-text,
 	.portlet-blogs .add-comment a.taglib-icon:hover .taglib-text {
 		text-decoration: none;
-	}	
+	}
 
 	.portlet-blogs .trackback-wrap {
 		display: none;
@@ -743,6 +743,14 @@
 	.portlet-blogs .post-reply-form {
 		display: block;
 		margin: 5px 0;
+	}
+
+	.portlet-blogs div.entry-content {
+		margin-bottom: 8px;
+	}
+
+	.portlet-blogs div.separator {
+		border-color: #BFBFBF;
 	}
 
 	/* Styling classes added through custom jsp */
