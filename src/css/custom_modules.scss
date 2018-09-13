@@ -245,11 +245,14 @@
 		z-index: 0;
 	}
 
-	.vgr-tabs .tab-selected a,
-	.vgr-tabs .tab-selected a:link,
-	.vgr-tabs .tab-selected a:hover {
-		background: #548332 url(../images/navigation/navigation-bg-active.png) top left repeat-x;
-		color: #fff;
+	.vgr-tabs .nav-tabs .tab-selected {
+		a,
+		a:link,
+		a:hover {
+			background: #548332 url(../images/navigation/navigation-bg-active.png) top left repeat-x;
+			border: none;
+			color: #fff;
+		}
 	}
 
 	.vgr-tabs .tab-selected a::after {
