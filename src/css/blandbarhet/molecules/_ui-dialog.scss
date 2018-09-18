@@ -7,7 +7,7 @@
     @include border-radius(4px);
 
     .ui-dialog-title {
-      line-height: 26px;
+      margin: 0;
     }
 
     .ui-dialog-titlebar {
@@ -19,14 +19,21 @@
       @include text-shadow(none);
     }
 
+    &.ui-widget-content .ui-dialog-titlebar {
+      padding: 9px 15px;
+    }
+
     .ui-dialog-titlebar-close {
 
       color: #fff;
       font-size: 1.3em;
       font-weight: normal;
+      line-height: 18px;
+      margin-top: 0;
       opacity: 0.7;
-      padding: 5px;
       text-decoration: none;
+      width: 16px;
+      height: 19px;
       @include box-shadow(none);
       @include transition(all 0.15s ease-in-out);
 
@@ -46,6 +53,10 @@
 
       .ui-icon-closethick {
         display: none;
+      }
+
+      &:hover {
+        padding: 0;
       }
 
     }
