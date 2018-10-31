@@ -2,6 +2,9 @@
 <#assign liferay_ui=PortalJspTagLibs["/META-INF/liferay-ui.tld"]>
 <#assign aui=PortalJspTagLibs["/META-INF/liferay-aui.tld"]>
 
+<#------ Services ----------------------------------------------------------------------------------------------------------------->
+<#assign roleLocalService = serviceLocator.findService("com.liferay.portal.kernel.service.RoleLocalService") />
+
 <#------ Theme CSS class ----------------------------------------------------------------------------------------------------------------->
 <#assign css_class = css_class + " dockbar-split" >
 
@@ -118,6 +121,18 @@ sign_out_url = htmlUtil.escape(theme_display.getURLSignOut())
 
 <#if is_rp_admin>
 	<#assign css_rp_admin = "rp-admin" />
+</#if>
+
+<#------ Regular user ----------------------------------------------------------------------------------------------------------------->
+<#assign globalRoles = roleLocalService.getUserRoles(user_id)?size >
+<#assign teamRoles = roleLocalService.getUserTeamRoles(user_id, group_id)?size >
+<#assign groupRoles = roleLocalService.getUserGroupRoles(user_id, group_id)?size >
+<#assign totalNumberOfRoles = globalRoles + teamRoles + groupRoles >
+
+<#if totalNumberOfRoles gt 2 || is_rp_admin>
+	<#assign regularUser = false />
+<#else>
+	<#assign regularUser = true />
 </#if>
 
 <#------ Theme Javascript ----------------------------------------------------------------------------------------------------------------->
