@@ -44,16 +44,15 @@
 			</h2>
 
 
-            <div class="top-wrap">
-
-				<#if themeDisplay.getThemeSetting("show-top-navigation-wrap") == "true">
+            <#if themeDisplay.getThemeSetting("show-top-navigation-wrap") == "true">
+                <div class="top-wrap">
 					<div class="top-navigation-wrap">
 						<#--<#if is_signed_in>-->
 							<#include "${full_templates_path}/top_navigation.ftl" />
 						<#--</#if>-->
 					</div>
-				</#if>
-      </div>
+                </div>
+            </#if>
 		</div>
 
 		<#if has_navigation || is_signed_in>
