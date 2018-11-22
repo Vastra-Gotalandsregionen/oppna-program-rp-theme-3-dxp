@@ -1000,6 +1000,11 @@
     hyphens: auto;
     word-break: break-all;
   }
+
+  /* Ensure that pages without JSF/Primefaces also hide these elements. Otherwise an issue can arise upon ajax navigation. */
+  .ui-helper-hidden, .ui-tooltip {
+	  display: none;
+  }
   
   /*------- Primefaces dialog -------*/
   

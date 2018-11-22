@@ -74,11 +74,6 @@ sign_out_url = htmlUtil.escape(theme_display.getURLSignOut())
 
 <#assign piwik_tracking_portlet_id = "piwiktracking_WAR_piwiktrackingportlet" />
 
-<#------ Admin controls -------------------------------------------------->
-<#assign custom_show_admin_controls = sessionClicks.get(request, "custom_admin_controls", "custom-admin-controls-closed") />
-<#assign css_class = css_class + " " + custom_show_admin_controls />
-
-
 <#------ Phrases ----------------------------------------------------------------------------------------------------------------->
 
 <#assign region_portal_name = "Regionportalen" />
