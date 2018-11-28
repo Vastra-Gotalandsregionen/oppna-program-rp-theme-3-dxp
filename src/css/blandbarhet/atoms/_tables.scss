@@ -36,7 +36,7 @@
   width: 34px;
 }
 
-table {
+html table {
 
   td {
     vertical-align: top;
@@ -62,4 +62,6 @@ table {
   .cell-content.expanded {
     max-height: none;
   }
+
+  border-collapse: collapse;
 }

@@ -1,3 +1,25 @@
 #wrapper label {
     display: block;
 }
+
+.app-label {
+    display: inline-block;
+    padding: 2px 4px;
+    font-weight: normal;
+    line-height: 14px;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background-color: #999;
+
+    background: 0;
+    color: #333;
+    font-size: 1em;
+    padding-left: 0;
+    text-shadow: none;
+
+    border-radius: 3px;
+
+    &:empty {
+        display: none;
+    }
+}
