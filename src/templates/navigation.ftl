@@ -22,7 +22,7 @@
 
 				<li class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" ${nav_item_attr_selected} role="presentation">
 
-					<a aria-labelledby="layout_${nav_item.getLayoutId()}" href="${nav_item.getURL()}" ${nav_item_attr_has_popup} ${nav_item.getTarget()} role="menuitem">
+					<a data-senna-off="true" aria-labelledby="layout_${nav_item.getLayoutId()}" href="${nav_item.getURL()}" ${nav_item_attr_has_popup} ${nav_item.getTarget()} role="menuitem">
 						<span>${nav_item.getName()}</span>
 					</a>
 
@@ -39,7 +39,7 @@
 									</#if>
 
 									<li class="${nav_child_css_class}" id="layout_${nav_child.getLayoutId()}" $nav_child_attr_selected role="presentation">
-										<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
+										<a data-senna-off="true" aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
 											${nav_child.getName()}
 										</a>
 
@@ -48,7 +48,7 @@
 											<ul>
 												<#list nav_child.getChildren() as nav_child_child>
 												<li role="presentation">
-													<a href="${nav_child_child.getURL()}"role="menuitem">
+													<a data-senna-off="true" href="${nav_child_child.getURL()}"role="menuitem">
 														${nav_child_child.getName()}
 													</a>
 												</li>
