@@ -558,6 +558,29 @@ text-decoration: none;
         background: #fff;
       }
 
+	  .row-fluid {
+
+		  [class*="span"] {
+			  display: block;
+			  width: 100%;
+			  min-height: 30px;
+			  -webkit-box-sizing: border-box;
+			  -moz-box-sizing: border-box;
+			  box-sizing: border-box;
+			  float: left;
+			  margin-left: 2%;
+		  }
+
+		  .span4 {
+			  width: 31%;
+		  }
+
+		  .span6 {
+			  width: 48.93%;
+		  }
+	  }
+
+
       .lfr-panel-content {
         padding: 5px;
       }
