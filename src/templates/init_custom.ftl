@@ -186,7 +186,15 @@ sign_out_url = htmlUtil.escape(theme_display.getURLSignOut())
 	</#if>
 </#macro>
 
-<#macro includePortlet portlet_id instance_id>
+<#macro includePortlet portlet_id>
+
+	<@liferay_portlet["runtime"]
+			defaultPreferences = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")
+			portletName = portlet_id
+	/>
+</#macro>
+
+<#macro includeInstanceablePortlet portlet_id instance_id>
 
 	<@liferay_portlet["runtime"]
 			defaultPreferences = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")
