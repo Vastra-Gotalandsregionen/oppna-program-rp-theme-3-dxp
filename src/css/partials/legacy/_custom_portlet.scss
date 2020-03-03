@@ -1,7 +1,3 @@
-@import "compass";
-@import "mixins";
-@import "bourbon";
-
 // Creating a triangle
 // --------
 @mixin triangle ($size, $color, $direction) {
