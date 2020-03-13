@@ -8,6 +8,11 @@
 		border-top-right-radius: 3px;
 	}
 
+	header.portlet-topper {
+		@include media-query(sm) {
+			position: absolute;
+		}
+	}
 }
 
 .portlet {
