@@ -12,14 +12,10 @@
     width: auto;
   }
 
-  select {
-    height: 20px;
-    width: 275px;
-  }
-
+  select,
   input[type="text"],
   textarea {
-    width: 265px;
+    width: 275px;
   }
 
   .button-row {
@@ -58,12 +54,11 @@
     }
 
     input[type=text] {
-      height: 16px;
+      height: 26px;
       padding: 2px 4px;
     }
 
     select {
-      height: 20px;
       padding: 1px;
     }
 
