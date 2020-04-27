@@ -34,7 +34,12 @@
     .compatibility-summary {
 
         .compatibility-summary-text {
+            font-weight: bold;
             padding-left: 50px;
+
+            .app-label {
+                font-weight: bold;
+            }
 
             p {
                 margin-top: 8px;
