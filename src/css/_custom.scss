@@ -1,3 +1,11 @@
+@import 'liferay-font-awesome/scss/font-awesome';
+@import 'liferay-font-awesome/scss/glyphicons';
+
+@import "mixins";
+@import "compat/mixins";
+@import "bourbon";
+@import "compass";
+
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
 /* inject:imports */
@@ -5,29 +13,34 @@
 
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 
-@import 'custom_aui.scss';
-@import 'custom_common.scss';
-@import 'custom_base.scss';
-@import 'custom_navigation.scss';
-@import 'custom_modules.scss';
-@import 'custom_liferay_components.scss';
-@import 'custom_liferay_portlets.scss';
-@import 'custom_portlet.scss';
-@import 'custom_articles.scss';
-@import 'custom_sandbox.scss';
-@import 'custom_layout.scss';
-@import 'custom_responsive.scss';
+@import 'partials/utilities/variables';
+@import 'partials/utilities/mixins';
+
+@import 'partials/legacy/custom_aui';
+@import 'partials/legacy/custom_common';
+@import 'partials/legacy/custom_base';
+@import 'partials/legacy/custom_navigation';
+@import 'partials/legacy/custom_modules';
+@import 'partials/legacy/custom_liferay_components';
+@import 'partials/legacy/custom_liferay_portlets';
+@import 'partials/legacy/custom_portlet';
+@import 'partials/legacy/custom_articles';
+@import 'partials/legacy/custom_sandbox';
+@import 'partials/legacy/custom_layout';
+@import 'partials/legacy/custom_responsive';
 
 @import 'partials/atoms/button';
 @import 'partials/atoms/label';
 @import 'partials/atoms/list';
 @import 'partials/atoms/select';
 @import 'partials/atoms/wrapper';
+
+@import 'partials/molecules/layout-finder';
 @import 'partials/molecules/portlet_decorator';
 @import 'partials/molecules/topper';
 
-@import 'blandbarhet/utilities/mixins';
-@import 'blandbarhet/utilities/variables';
+@import 'blandbarhet/utilities/blandbarhet_mixins';
+@import 'blandbarhet/utilities/blandbarhet_variables';
 
 @import 'blandbarhet/atoms/icon-exclamation';
 @import 'blandbarhet/atoms/link-button';

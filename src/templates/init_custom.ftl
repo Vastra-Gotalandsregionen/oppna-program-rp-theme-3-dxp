@@ -169,19 +169,18 @@ sign_out_url = htmlUtil.escape(theme_display.getURLSignOut())
 <#macro includeWCD group_id article_id>
 	<#if article_id != "">
 
-		<#local portlet_instance_suffix = "vgrregionportalen" />
+		<#local portlet_instance_suffix = "rptheme" />
 		<#local instance_id = "wcd" + article_id + portlet_instance_suffix />
 		<#local instance_id = instance_id?substring(0, 12) />
-		<#local portlet_id = "56_INSTANCE_" + instance_id />
 
-		${freeMarkerPortletPreferences.reset()}
+		<#assign wcdPortletPreferencesMap = {"articleId": article_id,"groupId": group_id?c,"portletSetupPortletDecoratorId": "barebone"} />
 
-		${freeMarkerPortletPreferences.setValue("portletSetupShowBorders","false")}
-		${freeMarkerPortletPreferences.setValue("groupId", group_id?c)}
-		${freeMarkerPortletPreferences.setValue("articleId", article_id)}
+    <@liferay_portlet["runtime"]
+        defaultPreferences = freeMarkerPortletPreferences.getPreferences(wcdPortletPreferencesMap)
+        instanceId = instance_id
+        portletName = "com_liferay_journal_content_web_portlet_JournalContentPortlet"
+    />
 
-		${theme.runtime(portlet_id, "", freeMarkerPortletPreferences)}
-		${freeMarkerPortletPreferences.reset()}
 	<#else>
 		&nbsp;
 	</#if>
@@ -189,11 +188,17 @@ sign_out_url = htmlUtil.escape(theme_display.getURLSignOut())
 
 <#macro includePortlet portlet_id>
 
-		${freeMarkerPortletPreferences.reset()}
+	<@liferay_portlet["runtime"]
+			defaultPreferences = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")
+			portletName = portlet_id
+	/>
+</#macro>
 
-		${freeMarkerPortletPreferences.setValue("portletSetupShowBorders","false")}
+<#macro includeInstanceablePortlet portlet_id instance_id>
 
-		<@liferay_portlet["runtime"] portletName="${portlet_id}" />
-		<#--<@liferay_portlet["runtime"] portletName="${portlet_id}" defaultPreferences="${freeMarkerPortletPreferences}" />-->
-		${freeMarkerPortletPreferences.reset()}
+	<@liferay_portlet["runtime"]
+			defaultPreferences = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")
+			instanceId = instance_id
+			portletName = portlet_id
+	/>
 </#macro>
