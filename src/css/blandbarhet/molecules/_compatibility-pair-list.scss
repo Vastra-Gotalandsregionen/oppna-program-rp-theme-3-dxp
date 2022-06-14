@@ -32,10 +32,14 @@
   }
 
     .compatibility-summary {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
 
         .compatibility-summary-text {
             font-weight: bold;
-            padding-left: 50px;
+            padding-left: 20px;
+            flex: 1 0 calc(100% - 35px); // 35 px is width of information-code and padding.
 
             .app-label {
                 font-weight: bold;
